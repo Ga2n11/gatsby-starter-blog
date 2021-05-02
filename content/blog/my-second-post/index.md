@@ -1,13 +1,20 @@
 ---
-title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
+title: Skills
+date: "2021-04-18T23:46:37.121Z"
 ---
 
-Wow! I love blogging so much already.
+1. Adobe Illustrator
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
-([Wikipedia Link](https://en.wikipedia.org/wiki/Salted_duck_egg))
+2. Adobe Photoshop
 
-Yeah, I didn't either.
+3. Html, Css
+
+4. Visual Studio
+
+5. Adobe Indesign
+
+6. 3DS Max
+
+7. Maya
+
+8. Adobe After Effects
