@@ -34,7 +34,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="All posts" />
       <Bio />
       <Link to="/about">About Page</Link><br/>
-      <input type="text" onChange={handleChange} placeholder="Search blog here" />
+      <input type="text" className="aboutpagelinkbutton" onChange={handleChange} placeholder="Search blog here" />
       <ol style={{ listStyle: `none` }}>
         {posts.filter(p => p.frontmatter.title.toLowerCase().includes(query.toLowerCase().trim())).map(post => {
           const title = post.frontmatter.title || post.fields.slug

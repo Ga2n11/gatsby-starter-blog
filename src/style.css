@@ -160,6 +160,11 @@ h6 > a {
   color: red;
 }
 
+.aboutpagelinkbutton {
+  margin: 1em 0 0 0;
+  padding: 0.5em;
+}
+
 a {
   color: red !important;
 }
