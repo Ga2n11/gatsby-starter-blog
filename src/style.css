@@ -180,6 +180,15 @@ p {
   color: white !important;
 }
 
+.totalblogcount {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  font-size: 20px;
+  text-align: right;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
 ul,
 ol {
   margin-left: var(--spacing-0);

@@ -67,6 +67,7 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
+      <p class="totalblogcount">Total blogs - {posts.filter(p => p.frontmatter.title.toLowerCase().includes(query.toLowerCase().trim())).length}</p>
     </Layout>
   )
 }
