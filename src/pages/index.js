@@ -9,6 +9,12 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
+  const [query, setQuery] = React.useState('')
+
+  const handleChange = (event) => {
+    setQuery(event.target.value)
+  }
+
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
@@ -27,8 +33,10 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <Link to="/about">About Page</Link><br/>
+      <input type="text" onChange={handleChange} placeholder="Search blog here" />
       <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
+        {posts.filter(p => p.frontmatter.title.toLowerCase().includes(query.toLowerCase().trim())).map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
